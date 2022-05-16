@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+:root{
+     --bgBlack: #060002;
+     --White: #fff;
+     --BurgerFontColor: #dedede;
+     --LogoBorderColor: #62be18;
+     --GreenFontColor: #62be19;
+     --bg75: rgba(105,207,23,0.75);
+     --bg90: rgba(105,207,23,0.9);
+     --MenuLinksColor: #7a7a7a;
+
+    --fral: 'Raleway', sans-serif;   
+    }
+
+
+.nav__inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+header{
+    height: 100vh;
+    background: url(./img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav__link{
+    display: inline-block;
+    font-size: 20px;
+    font-family: var(--fral);
+    color: var(--GreenFontColor);
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 40px 11px;
+}
+
+.busket{
+    color: var(--GreenFontColor);
+    background: var(--White);
+    padding: 3px 8px;
+    border-radius: 50%;
+    font-family: var(--fral);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.nav__link:hover{
+    background:var(--bg75) ;
+    color: var(--White);    
+}
+
+.logo{
+    color: var(--White);
+    text-transform: uppercase;  
+    font-family: var(--fral); 
+    font-size: 24px;
+    font-weight: 400;
+    padding: 8px 18px;
+    background: linear-gradient(to bottom, #48920c, #4e9f0d, #4b990d);
+    border: 3px solid var(--LogoBorderColor);
+    border-radius: 5px;
+}
+
+.header__title{
+    font-size: 72px;
+    color: var(--GreenFontColor);
+    font-family: var(--fral);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.header__subtitle{
+    font-family: var(--fral);
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--GreenFontColor);
+    text-transform: uppercase;
+    line-height: 30px;
+
+}
+
+.header__text{
+    font-family: var(--fral);
+    font-weight: 400;
+    color: var(--White);
+    font-size: 18px;
+    line-height: 25px;
+    margin: 36px 0px 78px; 
+}
+
+.header__price{
+    font-family: var(--fral);
+    font-weight: 100;
+    font-size: 60px;
+    color: var(--White);  
+    padding: 30px 90px;
+    background: var(--bg75);
+    width: max-content;  
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+.header__inner{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main{
+    background: var(--bgBlack);
+}
+
+.main__menu{
+    padding: 50px 0px 70px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.main__menu_link{
+    font-family: var(--fral);
+    color: var(--MenuLinksColor);
+    font-weight: 700;
+    margin-right: 50px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.main__menu_link:hover{
+    color: var(--GreenFontColor);
+}
+
+.burger__card{
+    max-width: max-content;
+    max-height: max-content;
+    position: relative;
+    overflow: hidden;
+}
+
+.burger__price{
+    font-size: 24px;
+    font-family: var(--fral);
+    font-weight: 400;
+    color: var(--White);
+    padding: 20px 60px;
+    background: var(--bg75);
+    max-width: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+    transform: rotate(-360deg);
+}
+
+.burger__busket{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--bg90);
+    color: var(--White);
+    font-family: var(--fral);
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transform: rotate(-360deg);
+}
+
+.burger__card:hover .burger__busket{
+    left: 0;
+    top: 0;
+    transform: rotate(0);
+}
+
+
+.burger__card:hover .burger__price{
+    left: 100%;
+    top: 0;
+    transform: rotate(0);
+}
+
+
+.burgers{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 50px 30px;
+    padding-bottom: 100px;
+}
+
+.burger__content{
+    margin-top: 35px;
+}
+
+.burger__subtitle{
+    font-family: var(--fral);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--GreenFontColor);
+    text-transform: uppercase;
+
+}
+
+.burger__text{
+    color: var(--BurgerFontColor);
+    font-family: var(--fral);
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.recipe{
+    background: url(./img/recipe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0 100px;
+}
+
+.recipe__title{
+    font-family: var(--fral);
+    font-size: 36px;
+    color: var(--GreenFontColor);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+.recipe__title::after{
+    content: '';
+    width: 200px;
+    height: 1px;
+    background: var(--GreenFontColor);
+    margin-top: 25px;
+}
+
+.recipe__text{
+    font-family: var(--fral);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--White);
+    line-height: 22px;
+    text-align: justify;
+
+}
+
+.recipe__text:nth-of-type(1){
+    margin: 50px 0px 35px 0px;
+}
+
+.branches__title{
+    background: var(--White);
+    color: var(--GreenFontColor);
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--fral);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer{
+    background: var(--bgBlack);
+    padding: 50px 0;
+
+}
+
+.logo{
+    width: max-content;
+}
+
+.footer__nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px 0px 40px;
+    list-style: none;
+}
+
+.footer__link{
+    margin:0 25px 0 25px;
+    color: var(--White);
+    font-family: var(--fral);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.footer__text{
+    text-align: center;
+    color: var(--White);
+    font-weight: 100;
+    font-family: var(--fral);
+}
+
+
+.footer__nav a:nth-of-type(2){
+    color: var(--GreenFontColor);
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--fral);
+}

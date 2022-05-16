@@ -1,0 +1,286 @@
+@media (max-width: 1200px) {
+
+    /* header */
+    .header__title { 
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .header__subtitle {
+        font-size: 20px;
+    }
+
+    .header__text {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 10px 0px 25px;
+    }
+
+    .header__price {
+        font-size: 40px;
+        padding: 10px 40px;
+    }
+
+    .logo {
+        padding: 5px 10px;
+        font-size: 20px;
+    }
+
+    .nav__link {
+        font-size: 18px;
+        padding: 25px 10px;
+    }
+
+    .busket {
+        font-size: 18px;
+        padding: 0 6px;
+        margin-left: 5px;
+    }
+    /* header// */
+
+    /* main */
+    .burgers {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding: 0 0 30px 0;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .burger__content {
+        max-width: 350px;
+    }
+
+    .recipe {
+        padding: 20px 0;
+    }
+
+    .recipe__title {
+        font-size: 25px;
+    }
+    
+    .recipe__title::after {
+        margin-top: 10px;
+    }
+
+    .recipe__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .recipe__text:nth-of-type(1) {
+        margin: 12px 0 10px 0;
+    }
+
+    .branches__title {
+        font-size: 25px;
+        padding: 15px 0;
+    }
+    /* main// */
+
+}
+
+@media (max-width: 780px) {
+    /* footer */
+    .footer__links {
+        flex-wrap: wrap;
+    }
+    /* footer */
+}
+
+@media (max-width: 750px) {
+    
+    /* main */
+    .burgers {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-gap: 10px 0;
+    }
+
+    .main__menu {
+        justify-content: center;
+    }
+
+    .main__menu_link {
+        margin: 0 10px;
+        text-transform: capitalize;
+    }
+    /* main// */
+
+}
+
+@media (max-width: 610px) {
+    
+    /* header */
+    .header__title {
+        font-size: 40px;
+    }
+
+    .header__subtitle {
+        font-size: 16px;
+    }
+
+    .header__text {
+        font-size: 10px;
+        line-height: 15px;
+        margin: 0px 0px 10px;
+    }
+
+    .header__price {
+        font-size: 20px;
+        padding: 10px 25px;
+    }
+
+    .nav__link {
+        font-size: 14px;
+    }
+    /* header// */
+
+    /* main */
+    .main__menu {
+        flex-wrap: wrap;
+        padding: 20px 0 30px 0;
+    }
+
+    .main__menu_link {
+        font-size: 12px;
+    }
+
+    .burger__card img {
+        max-width: 250px;
+    }
+
+    .burger__content {
+        max-width: 250px;
+        margin-top: 10px;
+    }
+
+    .burger__text {
+        font-size: 10px;
+        text-align: justify;
+        line-height: 10px;
+    }
+
+    .burger__subtitle {
+        font-size: 12px;
+    }
+
+    .burger__price {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+
+    .burger__busket {
+        font-size: 12px;
+    }
+
+    .recipe__text {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .recipe__title {
+        font-size: 16px;
+    }
+
+    .recipe__title::after {
+        max-width: 120px;
+    }
+
+    .branches__title {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    /* main// */
+
+}
+
+@media (max-width: 490px) {
+
+    /* header */
+    .header__title {
+        font-size: 30px;
+        line-height: 25px;
+    }
+
+    .header__subtitle {
+        line-height: 12px;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .nav__inner {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    /* header// */
+
+    /* footer */
+    .footer__link {
+        font-size: 12px;
+        text-transform: capitalize;
+        margin: 0 10px;
+    }
+
+    .footer__text {
+        font-size: 10px;
+    }
+
+    .footer__nav a:nth-of-type(2) {
+        font-size: 16px;
+    }
+
+    .footer .logo {
+        font-size: 14px;
+        padding: 2px;
+    }
+    /* footer// */
+
+}
+
+@media (max-width: 380px) {
+    
+    .header__title {
+        font-size: 25px;
+    }
+
+    .header__subtitle {
+        font-size: 12px;
+    }
+
+    .header__text {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .nav__link {
+        font-size: 12px;
+    }
+
+    .busket {
+        font-size: 12px;
+        padding: 0 4px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    
+    .header__title {
+        font-size: 20px;
+    }
+
+    .nav__link {
+        font-size: 10px;
+    }
+
+    .busket {
+        font-size: 10px;
+        padding: 0 3px;
+    }
+
+}
